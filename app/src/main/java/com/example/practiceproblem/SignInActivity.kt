@@ -1,5 +1,7 @@
 package com.example.practiceproblem
+
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.text.SpannableString
@@ -104,8 +106,11 @@ class SignInActivity : AppCompatActivity() {
 
         // Make the "Sign Up" part clickable
         binding.textSignUpPrompt.setOnClickListener {
-            // TODO: Navigate to the Sign Up screen
-            Toast.makeText(this, "Navigate to Sign Up", Toast.LENGTH_SHORT).show()
+            // Create an instruction to open SignUpActivity
+            val intent = Intent(this, SignUpActivity::class.java)
+
+            // Execute the instruction
+            startActivity(intent)
         }
     }
 }

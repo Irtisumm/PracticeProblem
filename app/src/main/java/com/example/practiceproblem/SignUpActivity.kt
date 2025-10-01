@@ -1,4 +1,4 @@
-package com.example.yourapp 
+package com.example.practiceproblem
 import android.annotation.SuppressLint
 import android.graphics.Typeface
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.text.method.PasswordTransformationMethod
 import android.text.style.StyleSpan
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.yourapp.databinding.ActivitySignUpBinding 
+import com.example.practiceproblem.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
 
