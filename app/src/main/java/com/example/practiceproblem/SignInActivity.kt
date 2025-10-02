@@ -32,7 +32,10 @@ class SignInActivity : AppCompatActivity() {
         binding.backArrow.setOnClickListener {
             finish() // Closes the current activity
         }
-
+        binding.linkForgotPassword.setOnClickListener {
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
+        }
         // Sign In Button Click
         binding.buttonSignIn.setOnClickListener {
             val email = binding.inputEmail.text.toString()
